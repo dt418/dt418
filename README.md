@@ -13,7 +13,7 @@
 
 - 📫 How to reach me **info@danhthanh.dev**
 
-- 📄 Know about my experiences [danhthanh.dev/cv](danhthanh.dev/cv)
+- 📄 Know about my experiences [danhthanh.dev](https://danhthanh.dev/)/cv](danhthanh.dev/cv)
 
 ### Blogs posts
 <!-- BLOG-POST-LIST:START -->

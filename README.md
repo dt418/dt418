@@ -11,7 +11,7 @@
 
 - 💬 Ask me about **Reactjs, Typescript, Nextjs, Javascript**
 
-- 📫 How to reach me **info@danhthanh.dev**
+- 📫 How to reach me **danhthanh418@gmail.com**
 
 - 📄 Know about my experiences []()
 

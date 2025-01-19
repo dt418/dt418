@@ -7,13 +7,13 @@
 
 - 🌱 I’m currently learning **Astrojs, Drizzle ORM, Postgres, php, Laravel, graphQL**
 
-- 👨‍💻 All of my projects are available at [danhthanh.dev/projects](https://danhthanh.dev/projects)
+- 👨‍💻 All of my projects are available at []()
 
 - 💬 Ask me about **Reactjs, Typescript, Nextjs, Javascript**
 
 - 📫 How to reach me **info@danhthanh.dev**
 
-- 📄 Know about my experiences [danhthanh.dev/cv](https://danhthanh.dev/cv)
+- 📄 Know about my experiences []()
 
 ### Blogs posts
 <!-- BLOG-POST-LIST:START -->

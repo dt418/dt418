@@ -41,7 +41,7 @@ def extract_deps_from_repo(repo):
             pkg = json.loads(content)
             all_deps = list(pkg.get("dependencies", {}).keys()) + list(pkg.get("devDependencies", {}).keys())
             for d in all_deps:
-                deps.add(d)  # Keep full name including @scope/
+                deps.add(d)
         except:
             pass
     
@@ -54,6 +54,18 @@ def extract_deps_from_repo(repo):
                 deps.add(d)
         except:
             pass
+    
+    # Check Dockerfile
+    content = get_repo_file(repo, "Dockerfile")
+    if content:
+        deps.add("__dockerfile__")
+    
+    # Check docker-compose.yml / docker-compose.yaml
+    for compose_file in ["docker-compose.yml", "docker-compose.yaml"]:
+        content = get_repo_file(repo, compose_file)
+        if content:
+            deps.add("__docker_compose__")
+            break
     
     return deps
 
@@ -75,6 +87,8 @@ TECH_BADGES = {
     "eslint": ("ESLint", "4B32C3", "eslint", "white"),
     "prettier": ("Prettier", "F7B93E", "prettier", "black"),
     "turbo": ("Turbo", "EF4444", "turborepo", "white"),
+    "__dockerfile__": ("Docker", "2496ED", "docker", "white"),
+    "__docker_compose__": ("Docker Compose", "2496ED", "docker", "white"),
     "laravel/framework": ("Laravel", "FF2D20", "laravel", "white"),
     "filament/filament": ("Filament", "FDAE4B", "laravel", "white"),
     "php": ("PHP", "777BB4", "php", "white"),

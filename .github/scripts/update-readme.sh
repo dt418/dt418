@@ -22,6 +22,13 @@ export PROJECTS_TABLE=$(echo "$TOP_REPOS" | jq -r '
   [.[] | "| [\(.name)](\(.html_url)) | \(.language // "—") | \(.stargazers_count) |"] | join("\n")
 ')
 
+# Fetch active repos (non-fork, sorted by last updated)
+ACTIVE_REPOS=$(gh api users/dt418/repos?per_page=100 --jq '[.[] | select(.fork == false) | select(.name != "dt418")] | sort_by(-(.updated_at | fromdateiso8601)) | .[0:4]')
+export ACTIVE_PROJECTS_TABLE=$(echo "$ACTIVE_REPOS" | jq -r '
+  ["| Project | Language | Last Updated |", "|---------|----------|-------------|"] +
+  [.[] | "| [\(.name)](\(.html_url)) | \(.language // "—") | \(.updated_at[:10]) |"] | join("\n")
+')
+
 # Fetch language stats
 export LANG_STATS=$(gh api users/dt418/repos --paginate --jq '
   [.[] | select(.fork == false) | .language // "Other"]
@@ -43,6 +50,7 @@ public_repos = os.environ['PUBLIC_REPOS']
 followers = os.environ['FOLLOWERS']
 years = os.environ['YEARS']
 projects_table = os.environ['PROJECTS_TABLE']
+active_projects_table = os.environ['ACTIVE_PROJECTS_TABLE']
 lang_stats = os.environ['LANG_STATS']
 
 with open('README.md', 'r') as f:
@@ -58,6 +66,11 @@ content = re.sub(r'id="lang-stats">[^<]*</span>', f'id="lang-stats">{lang_stats}
 pattern = r'<!-- PROJECTS:START -->.*?<!-- PROJECTS:END -->'
 replacement = f'<!-- PROJECTS:START -->\n{projects_table}\n<!-- PROJECTS:END -->'
 content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+
+# Update active projects table
+active_pattern = r'<!-- ACTIVE-PROJECTS:START -->.*?<!-- ACTIVE-PROJECTS:END -->'
+active_replacement = f'<!-- ACTIVE-PROJECTS:START -->\n{active_projects_table}\n<!-- ACTIVE-PROJECTS:END -->'
+content = re.sub(active_pattern, active_replacement, content, flags=re.DOTALL)
 
 # Update timestamp
 now = datetime.now().strftime('%B %Y')

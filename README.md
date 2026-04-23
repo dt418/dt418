@@ -7,8 +7,8 @@
 
 <p align="center">
   <strong>Followers:</strong> <span id="followers-count">0</span> •
-  <strong>Repositories:</strong> <span id="repos-count">0</span> •
-  <strong>GitHub Member:</strong> <span id="years-count">0</span> years
+  <strong>Repositories:</strong> <span id="repos-count">26</span> •
+  <strong>GitHub Member:</strong> <span id="years-count">6</span> years
 </p>
 
 ---
@@ -19,6 +19,17 @@
 - 💬 Ask me about **React, TypeScript, Next.js, JavaScript**
 - 📫 Reach me at **danhthanh418@gmail.com**
 - 🟢 Available for hire
+
+### 🚀 Currently Working On
+
+<!-- ACTIVE-PROJECTS:START -->
+| Project | Language | Last Updated |
+|---------|----------|-------------|
+| [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-04-19 |
+| [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 2026-04-09 |
+| [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 2026-04-03 |
+| [localskills-manager](https://github.com/dt418/localskills-manager) | — | 2026-04-02 |
+<!-- ACTIVE-PROJECTS:END -->
 
 ### Connect
 

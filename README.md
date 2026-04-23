@@ -7,7 +7,7 @@
 
 <p align="center">
   <strong>Followers:</strong> <span id="followers-count">0</span> •
-  <strong>Repositories:</strong> <span id="repos-count">26</span> •
+  <strong>Repositories:</strong> <span id="repos-count">25</span> •
   <strong>GitHub Member:</strong> <span id="years-count">6</span> years
 </p>
 
@@ -15,19 +15,21 @@
 
 ### About Me
 
-- 🌱 Currently learning **Astro, Drizzle ORM, PostgreSQL, PHP, Laravel, GraphQL**
-- 💬 Ask me about **React, TypeScript, Next.js, JavaScript**
+<!-- ABOUT:START -->
+- 🏢 Building with **React, Next.js, TypeScript, Tailwind CSS**
+- 🔧 Backend experience with **Laravel, PHP, Filament**
 - 📫 Reach me at **danhthanh418@gmail.com**
 - 🟢 Available for hire
+<!-- ABOUT:END -->
 
 ### 🚀 Currently Working On
 
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 2026-04-23 |
 | [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-04-19 |
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 2026-04-09 |
-| [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 2026-04-03 |
 | [localskills-manager](https://github.com/dt418/localskills-manager) | — | 2026-04-02 |
 | [9router-docker](https://github.com/dt418/9router-docker) | JavaScript | 2026-03-26 |
 <!-- ACTIVE-PROJECTS:END -->
@@ -41,33 +43,34 @@
 
 ### Tech Stack
 
+<!-- TECH:START -->
 <p align="left">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" alt="React" />
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Astro-FF5D01?style=flat&logo=astro&logoColor=white" alt="Astro" />
-  <img src="https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white" alt="Angular" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white" alt="Express" />
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/TanStack_Query-FF4154?style=flat&logo=reactquery&logoColor=white" alt="TanStack Query" />
+  <img src="https://img.shields.io/badge/Zustand-000000?style=flat&logoColor=white" alt="Zustand" />
+  <img src="https://img.shields.io/badge/React_Hook_Form-EC5990?style=flat&logo=reacthookform&logoColor=white" alt="React Hook Form" />
+  <img src="https://img.shields.io/badge/Zod-3E67B1?style=flat&logoColor=white" alt="Zod" />
+  <img src="https://img.shields.io/badge/Radix_UI-161718?style=flat&logo=radixui&logoColor=white" alt="Radix UI" />
+  <img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat&logo=vitest&logoColor=white" alt="Vitest" />
+  <img src="https://img.shields.io/badge/Testing_Library-E33332?style=flat&logo=testinglibrary&logoColor=white" alt="Testing Library" />
+  <img src="https://img.shields.io/badge/ESLint-4B32C3?style=flat&logo=eslint&logoColor=white" alt="ESLint" />
+  <img src="https://img.shields.io/badge/Prettier-F7B93E?style=flat&logo=prettier&logoColor=black" alt="Prettier" />
+  <img src="https://img.shields.io/badge/Turbo-EF4444?style=flat&logo=turborepo&logoColor=white" alt="Turbo" />
   <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white" alt="Laravel" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Drizzle-C5F74F?style=flat&logo=drizzle&logoColor=black" alt="Drizzle ORM" />
-  <img src="https://img.shields.io/badge/GraphQL-E10098?style=flat&logo=graphql&logoColor=white" alt="GraphQL" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Android-3DDC84?style=flat&logo=android&logoColor=white" alt="Android" />
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white" alt="Bootstrap" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white" alt="Figma" />
-  <img src="https://img.shields.io/badge/Cypress-17202C?style=flat&logo=cypress&logoColor=white" alt="Cypress" />
+  <img src="https://img.shields.io/badge/Filament-FDAE4B?style=flat&logo=laravel&logoColor=white" alt="Filament" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white" alt="PHP" />
 </p>
+<!-- TECH:END -->
 
 ### 🚀 Released Projects
 
 <!-- RELEASED-PROJECTS:START -->
 | Project | Language | ⭐ | Description |
 |---------|----------|----|-------------|
-| [nghien-phim](https://github.com/dt418/nghien-phim) | TypeScript | 2 | Nextjs film website |
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | A modern and elegant website for a yoga studio built with React, TypeScript, and Tailwind CSS. |
 <!-- RELEASED-PROJECTS:END -->
 
@@ -76,12 +79,12 @@
 <!-- PROJECTS:START -->
 | Project | Language | ⭐ |
 |---------|----------|----|
-| [nghien-phim](https://github.com/dt418/nghien-phim) | TypeScript | 2 |
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 |
 | [9router-agent-skill](https://github.com/dt418/9router-agent-skill) | — | 0 |
 | [9router-docker](https://github.com/dt418/9router-docker) | JavaScript | 0 |
 | [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 |
 | [docker-smoke-test-agent-skill](https://github.com/dt418/docker-smoke-test-agent-skill) | — | 0 |
+| [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 0 |
 <!-- PROJECTS:END -->
 
 ### GitHub Stats
@@ -95,4 +98,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: April 2026 • <span id="repos-count">26</span> public repositories • <span id="lang-stats">TypeScript (6), Other (5), JavaScript (2), PHP (1), PowerShell (1)</span></em></p>
+<p align="center"><em>Last updated: April 2026 • <span id="repos-count">25</span> public repositories • <span id="lang-stats">Other (5), TypeScript (5), JavaScript (2), PHP (1), PowerShell (1)</span></em></p>

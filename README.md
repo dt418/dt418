@@ -29,6 +29,7 @@
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 2026-04-09 |
 | [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 2026-04-03 |
 | [localskills-manager](https://github.com/dt418/localskills-manager) | — | 2026-04-02 |
+| [9router-docker](https://github.com/dt418/9router-docker) | JavaScript | 2026-03-26 |
 <!-- ACTIVE-PROJECTS:END -->
 
 ### Connect
@@ -61,6 +62,15 @@
   <img src="https://img.shields.io/badge/Cypress-17202C?style=flat&logo=cypress&logoColor=white" alt="Cypress" />
 </p>
 
+### 🚀 Released Projects
+
+<!-- RELEASED-PROJECTS:START -->
+| Project | Language | ⭐ | Description |
+|---------|----------|----|-------------|
+| [nghien-phim](https://github.com/dt418/nghien-phim) | TypeScript | 2 | Nextjs film website |
+| [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | A modern and elegant website for a yoga studio built with React, TypeScript, and Tailwind CSS. |
+<!-- RELEASED-PROJECTS:END -->
+
 ### Featured Projects
 
 <!-- PROJECTS:START -->
@@ -85,4 +95,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: April 2026 • <span id="repos-count">26</span> public repositories • <span id="lang-stats">Other (6), TypeScript (6), JavaScript (2), Batchfile (1), PHP (1)</span></em></p>
+<p align="center"><em>Last updated: April 2026 • <span id="repos-count">26</span> public repositories • <span id="lang-stats">TypeScript (6), Other (5), JavaScript (2), PHP (1), PowerShell (1)</span></em></p>

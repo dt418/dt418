@@ -77,14 +77,14 @@
 ### Featured Projects
 
 <!-- PROJECTS:START -->
-| Project | Language | ⭐ |
-|---------|----------|----|
-| [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 |
-| [9router-agent-skill](https://github.com/dt418/9router-agent-skill) | — | 0 |
-| [9router-docker](https://github.com/dt418/9router-docker) | JavaScript | 0 |
-| [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 |
-| [docker-smoke-test-agent-skill](https://github.com/dt418/docker-smoke-test-agent-skill) | — | 0 |
-| [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 0 |
+| Project | Language | ⭐ | Commits |
+|---------|----------|----|---------|
+| [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | 33 |
+| [9router-agent-skill](https://github.com/dt418/9router-agent-skill) | — | 0 | 1 |
+| [9router-docker](https://github.com/dt418/9router-docker) | JavaScript | 0 | 403 |
+| [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 | 2 |
+| [docker-smoke-test-agent-skill](https://github.com/dt418/docker-smoke-test-agent-skill) | — | 0 | 1 |
+| [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 0 | 14 |
 <!-- PROJECTS:END -->
 
 ### GitHub Stats

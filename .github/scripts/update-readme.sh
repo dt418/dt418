@@ -136,9 +136,22 @@ about_lines.append("- 📫 Reach me at **danhthanh418@gmail.com**")
 about_lines.append("- 🟢 Available for hire")
 about_html = "\n".join(about_lines)
 
-# Active projects: updated within last 30 days
-thirty_days_ago = datetime.now(timezone.utc) - timedelta(days=30)
-active = [r for r in repos if datetime.fromisoformat(r["updated_at"].replace("Z", "+00:00")) > thirty_days_ago]
+def get_commit_count(repo):
+    """Get total commit count for a repo"""
+    try:
+        result = subprocess.run(
+            ["gh", "api", f"repos/dt418/{repo}/commits", "--paginate", "--jq", ".[].sha"],
+            capture_output=True, text=True, timeout=30
+        )
+        if result.returncode != 0:
+            return -1  # Repo deleted or inaccessible
+        return len(result.stdout.strip().split("\n")) if result.stdout.strip() else 0
+    except:
+        return -1
+
+# Active projects: updated within last 3 months
+three_months_ago = datetime.now(timezone.utc) - timedelta(days=90)
+active = [r for r in repos if datetime.fromisoformat(r["updated_at"].replace("Z", "+00:00")) > three_months_ago]
 active.sort(key=lambda r: r["updated_at"], reverse=True)
 
 active_table = "| Project | Language | Last Updated |\n|---------|----------|-------------|"
@@ -147,7 +160,7 @@ for r in active[:5]:
     date = r["updated_at"][:10]
     active_table += f"\n| [{r['name']}]({r['html_url']}) | {lang} | {date} |"
 if not active:
-    active_table += "\n| *No active projects in the last 30 days* | | |"
+    active_table += "\n| *No active projects in the last 3 months* | | |"
 
 # Released projects: repos with stars
 released = sorted([r for r in repos if r["stargazers_count"] > 0], key=lambda r: r["stargazers_count"], reverse=True)
@@ -157,12 +170,23 @@ for r in released[:6]:
     desc = (r.get("description") or "—").replace("|", "\\|")
     released_table += f"\n| [{r['name']}]({r['html_url']}) | {lang} | {r['stargazers_count']} | {desc} |"
 
-# Top projects by stars
-top = sorted(repos, key=lambda r: r["stargazers_count"], reverse=True)[:6]
-top_table = "| Project | Language | ⭐ |\n|---------|----------|----|"
+# Top projects: most stars, skip deleted repos
+print("Fetching commit counts for featured projects...")
+repo_commits = {}
+for r in repos:
+    count = get_commit_count(r["name"])
+    repo_commits[r["name"]] = count
+    status = "DELETED" if count == -1 else f"{count} commits"
+    print(f"  {r['name']}: {status}")
+
+# Filter out deleted repos, sort by stars descending
+valid_repos = [r for r in repos if repo_commits.get(r["name"], -1) >= 0]
+top = sorted(valid_repos, key=lambda r: r["stargazers_count"], reverse=True)[:6]
+top_table = "| Project | Language | ⭐ | Commits |\n|---------|----------|----|---------|"
 for r in top:
     lang = r["language"] or "—"
-    top_table += f"\n| [{r['name']}]({r['html_url']}) | {lang} | {r['stargazers_count']} |"
+    commits = repo_commits.get(r["name"], 0)
+    top_table += f"\n| [{r['name']}]({r['html_url']}) | {lang} | {r['stargazers_count']} | {commits} |"
 
 # Language stats
 lang_counts = {}

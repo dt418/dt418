@@ -7,14 +7,18 @@ if [ -z "$GH_TOKEN" ]; then
   exit 1
 fi
 
-python3 << 'PYTHON_SCRIPT'
+python3 << PYTHON_SCRIPT
 import json
 import urllib.request
 import urllib.error
 import re
 import base64
+import os
 from datetime import datetime, timedelta, timezone
 from collections import Counter
+
+# Get token from environment
+GH_TOKEN = os.environ.get('GH_TOKEN')
 
 def gh_api(path, paginate=False):
     """Make a request to GitHub API"""
@@ -196,15 +200,11 @@ about_html = "\n".join(about_lines)
 def get_commit_count(repo):
     """Get total commit count for a repo"""
     try:
-        result = subprocess.run(
-            ["gh", "api", f"repos/dt418/{repo}/commits", "--paginate", "--jq", ".[].sha"],
-            capture_output=True, text=True, timeout=30
-        )
-        if result.returncode != 0:
-            return -1  # Repo deleted or inaccessible
-        return len(result.stdout.strip().split("\n")) if result.stdout.strip() else 0
+        # Use paginated API to get all commits
+        commits = gh_api(f"repos/dt418/{repo}/commits", paginate=True)
+        return len(commits)
     except:
-        return -1
+        return -1  # Repo deleted or inaccessible
 
 # Active projects: updated within last 3 months
 three_months_ago = datetime.now(timezone.utc) - timedelta(days=90)

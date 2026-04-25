@@ -1,32 +1,75 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-export GH_TOKEN=$(gh auth token)
+# Use GH_TOKEN from environment (set by workflow)
+if [ -z "$GH_TOKEN" ]; then
+  echo "Error: GH_TOKEN environment variable is not set"
+  exit 1
+fi
 
 python3 << 'PYTHON_SCRIPT'
 import json
-import subprocess
+import urllib.request
+import urllib.error
 import re
 import base64
 from datetime import datetime, timedelta, timezone
 from collections import Counter
 
 def gh_api(path, paginate=False):
-    cmd = ["gh", "api", path]
+    """Make a request to GitHub API"""
+    url = f"https://api.github.com/{path}"
+    req = urllib.request.Request(url)
+    req.add_header("Authorization", f"token {GH_TOKEN}")
+    req.add_header("Accept", "application/vnd.github.v3+json")
+    
     if paginate:
-        cmd.append("--paginate")
-    result = subprocess.run(cmd, capture_output=True, text=True, check=True)
-    data = json.loads(result.stdout)
-    return data if isinstance(data, list) else [data]
+        # Handle pagination
+        results = []
+        while url:
+            try:
+                response = urllib.request.urlopen(req)
+                data = json.loads(response.read().decode())
+                if isinstance(data, list):
+                    results.extend(data)
+                else:
+                    results.append(data)
+                
+                # Check for next page
+                links = response.headers.get("Link", "")
+                next_url = None
+                for link in links.split(","):
+                    if 'rel="next"' in link:
+                        next_url = link[link.find("<")+1:link.find(">")]
+                        break
+                if not next_url:
+                    break
+                req = urllib.request.Request(next_url)
+                req.add_header("Authorization", f"token {GH_TOKEN}")
+                req.add_header("Accept", "application/vnd.github.v3+json")
+            except urllib.error.HTTPError as e:
+                print(f"HTTP Error: {e.code} {e.reason}")
+                raise
+        return results
+    else:
+        try:
+            response = urllib.request.urlopen(req)
+            data = json.loads(response.read().decode())
+            return data if isinstance(data, list) else [data]
+        except urllib.error.HTTPError as e:
+            print(f"HTTP Error: {e.code} {e.reason}")
+            raise
 
 def get_repo_file(repo, filepath):
     """Get file content from a repo"""
     try:
-        result = subprocess.run(
-            ["gh", "api", f"repos/dt418/{repo}/contents/{filepath}", "--jq", ".content"],
-            capture_output=True, text=True, check=True
-        )
-        return base64.b64decode(result.stdout.strip()).decode("utf-8")
+        url = f"https://api.github.com/repos/dt418/{repo}/contents/{filepath}"
+        req = urllib.request.Request(url)
+        req.add_header("Authorization", f"token {GH_TOKEN}")
+        req.add_header("Accept", "application/vnd.github.v3+json")
+        response = urllib.request.urlopen(req)
+        data = json.loads(response.read().decode())
+        return base64.b64decode(data["content"]).decode("utf-8")
     except:
         return None
 

@@ -15,9 +15,7 @@ import re
 import base64
 import os
 from datetime import datetime, timedelta, timezone
-from collections import Counter
 
-# Get token from environment
 GH_TOKEN = os.environ.get('GH_TOKEN')
 
 def gh_api(path, paginate=False):
@@ -35,17 +33,15 @@ def gh_api(path, paginate=False):
         url = base_url
         while url:
             try:
-                req = make_req(url)  # FIX: tạo req mới mỗi iteration
+                req = make_req(url)
                 response = urllib.request.urlopen(req)
                 data = json.loads(response.read().decode())
                 if isinstance(data, list):
                     results.extend(data)
                 else:
                     results.append(data)
-
-                # Check for next page
                 links = response.headers.get("Link", "")
-                url = None  # FIX: reset url, thoát loop nếu không có next
+                url = None
                 for link in links.split(","):
                     if 'rel="next"' in link:
                         url = link[link.find("<")+1:link.find(">")]
@@ -73,7 +69,6 @@ def get_repo_file(repo, filepath):
         req.add_header("Accept", "application/vnd.github.v3+json")
         response = urllib.request.urlopen(req)
         data = json.loads(response.read().decode())
-        # FIX: xử lý content có thể bị wrap nhiều dòng
         raw = data["content"].replace("\n", "")
         return base64.b64decode(raw).decode("utf-8")
     except Exception:
@@ -83,7 +78,6 @@ def extract_deps_from_repo(repo):
     """Extract dependencies from package.json or composer.json"""
     deps = set()
 
-    # Check package.json
     content = get_repo_file(repo, "package.json")
     if content:
         try:
@@ -93,7 +87,6 @@ def extract_deps_from_repo(repo):
         except Exception:
             pass
 
-    # Check composer.json
     content = get_repo_file(repo, "composer.json")
     if content:
         try:
@@ -103,11 +96,9 @@ def extract_deps_from_repo(repo):
         except Exception:
             pass
 
-    # Check Dockerfile
     if get_repo_file(repo, "Dockerfile"):
         deps.add("__dockerfile__")
 
-    # Check docker-compose.yml / docker-compose.yaml
     for compose_file in ["docker-compose.yml", "docker-compose.yaml"]:
         if get_repo_file(repo, compose_file):
             deps.add("__docker_compose__")
@@ -115,7 +106,6 @@ def extract_deps_from_repo(repo):
 
     return deps
 
-# Tech mapping: exact package name -> (display_name, color, logo, logo_color)
 TECH_BADGES = {
     "react": ("React", "61DAFB", "react", "black"),
     "next": ("Next.js", "000000", "next.js", "white"),
@@ -141,23 +131,29 @@ TECH_BADGES = {
     "docker": ("Docker", "2496ED", "docker", "white"),
 }
 
-# Fetch user data
-user = gh_api("user")[0]
+# FIX: dùng /users/dt418 thay vì /user (tránh 403 Forbidden)
+print("Fetching user data...")
+user = gh_api("users/dt418")[0]
 public_repos = user["public_repos"]
 followers = user["followers"]
 created = datetime.fromisoformat(user["created_at"].replace("Z", "+00:00"))
 years = (datetime.now(timezone.utc) - created).days // 365
 
-# Fetch all non-fork repos
-all_repos = gh_api("users/dt418/repos", paginate=True)
-repos = [r for r in all_repos if not r["fork"] and r["name"] != "dt418"]
+print(f"User: dt418 | Repos: {public_repos} | Followers: {followers} | Years: {years}")
 
-# Scan dependencies from all repos
+# Fetch all non-fork repos
+print("Fetching repositories...")
+all_repos = gh_api("users/dt418/repos?per_page=100", paginate=True)
+repos = [r for r in all_repos if not r["fork"] and r["name"] != "dt418"]
+print(f"Found {len(repos)} non-fork repos")
+
+# Scan dependencies
 SCAN_LANGUAGES = {"TypeScript", "JavaScript", "PHP", "Python", "Go", "Rust", "Ruby"}
 repos_to_scan = [r["name"] for r in repos if r["language"] in SCAN_LANGUAGES]
 all_deps = set()
 repo_languages = set()
 
+print(f"Scanning dependencies in {len(repos_to_scan)} repos...")
 for repo_name in repos_to_scan:
     all_deps.update(extract_deps_from_repo(repo_name))
     for r in repos:
@@ -165,15 +161,13 @@ for repo_name in repos_to_scan:
             repo_languages.add(r["language"])
             break
 
-# Add languages as detected tech
 if "TypeScript" in repo_languages:
     all_deps.add("typescript")
 
-# Build tech stack badges from detected deps
+# Build tech badges
 detected_tech = []
 for dep, (name, color, logo, logoColor) in TECH_BADGES.items():
     if dep in all_deps:
-        # FIX: encode tên badge đúng cách (dấu cách -> _)
         badge_name = name.replace(" ", "_").replace("-", "--")
         if logo:
             detected_tech.append(
@@ -202,22 +196,18 @@ about_lines.append("- 🟢 Available for hire")
 about_html = "\n".join(about_lines)
 
 def get_commit_count(repo):
-    """Get commit count using contributor stats — tránh fetch toàn bộ commit history"""
+    """Get commit count via contributors API — nhanh hơn fetch toàn bộ commits"""
     try:
-        # FIX: dùng contributors stats thay vì paginate toàn bộ commits
-        # API trả về số commit mỗi contributor, tổng lại nhanh hơn nhiều
-        stats = gh_api(f"repos/dt418/{repo}/contributors", paginate=True)
-        total = sum(c.get("contributions", 0) for c in stats)
-        return total if total > 0 else 0
+        stats = gh_api(f"repos/dt418/{repo}/contributors?per_page=100", paginate=True)
+        return sum(c.get("contributions", 0) for c in stats)
     except urllib.error.HTTPError as e:
         if e.code == 404:
-            return -1  # Repo deleted hoặc không accessible
-        # 202: GitHub đang tính toán stats, thử lại sau
+            return -1
         if e.code == 202:
             import time
             time.sleep(3)
             try:
-                stats = gh_api(f"repos/dt418/{repo}/contributors", paginate=True)
+                stats = gh_api(f"repos/dt418/{repo}/contributors?per_page=100", paginate=True)
                 return sum(c.get("contributions", 0) for c in stats)
             except Exception:
                 return 0
@@ -245,14 +235,16 @@ for r in released[:6]:
     lang = r["language"] or "—"
     desc = (r.get("description") or "—").replace("|", r"\|")
     released_table += f"\n| [{r['name']}]({r['html_url']}) | {lang} | {r['stargazers_count']} | {desc} |"
+if not released:
+    released_table += "\n| *No starred projects yet* | | | |"
 
-# Top projects — fetch commit counts
-print("Fetching commit counts for featured projects...")
+# Top projects
+print("Fetching commit counts...")
 repo_commits = {}
 for r in repos:
     count = get_commit_count(r["name"])
     repo_commits[r["name"]] = count
-    status = "DELETED/inaccessible" if count == -1 else f"{count} commits"
+    status = "inaccessible" if count == -1 else f"{count} commits"
     print(f"  {r['name']}: {status}")
 
 valid_repos = [r for r in repos if repo_commits.get(r["name"], -1) >= 0]
@@ -271,7 +263,8 @@ for r in repos:
 lang_stats = ", ".join(f"{k} ({v})" for k, v in sorted(lang_counts.items(), key=lambda x: -x[1])[:5])
 
 # Update README
-with open("README.md", "r", encoding="utf-8") as f:  # FIX: thêm encoding
+print("Updating README.md...")
+with open("README.md", "r", encoding="utf-8") as f:
     content = f.read()
 
 content = re.sub(r'id="repos-count">\d+</span>', f'id="repos-count">{public_repos}</span>', content)
@@ -284,37 +277,32 @@ content = re.sub(
     f'<!-- ABOUT:START -->\n{about_html}\n<!-- ABOUT:END -->',
     content, flags=re.DOTALL
 )
-
 content = re.sub(
     r'<!-- TECH:START -->.*?<!-- TECH:END -->',
     f'<!-- TECH:START -->\n<p align="left">\n  {tech_stack_html}\n</p>\n<!-- TECH:END -->',
     content, flags=re.DOTALL
 )
-
 content = re.sub(
     r'<!-- ACTIVE-PROJECTS:START -->.*?<!-- ACTIVE-PROJECTS:END -->',
     f'<!-- ACTIVE-PROJECTS:START -->\n{active_table}\n<!-- ACTIVE-PROJECTS:END -->',
     content, flags=re.DOTALL
 )
-
 content = re.sub(
     r'<!-- RELEASED-PROJECTS:START -->.*?<!-- RELEASED-PROJECTS:END -->',
     f'<!-- RELEASED-PROJECTS:START -->\n{released_table}\n<!-- RELEASED-PROJECTS:END -->',
     content, flags=re.DOTALL
 )
-
 content = re.sub(
     r'<!-- PROJECTS:START -->.*?<!-- PROJECTS:END -->',
     f'<!-- PROJECTS:START -->\n{top_table}\n<!-- PROJECTS:END -->',
     content, flags=re.DOTALL
 )
 
-# FIX: dùng timezone-aware datetime để nhất quán
 now = datetime.now(timezone.utc).strftime("%B %Y")
 content = re.sub(r"Last updated:.*?•", f"Last updated: {now} •", content)
 
-with open("README.md", "w", encoding="utf-8") as f:  # FIX: thêm encoding
+with open("README.md", "w", encoding="utf-8") as f:
     f.write(content)
 
-print("README updated successfully")
+print("README updated successfully!")
 PYTHON_SCRIPT

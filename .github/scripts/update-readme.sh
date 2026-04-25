@@ -2,12 +2,12 @@
 set -euo pipefail
 
 # Use GH_TOKEN from environment (set by workflow)
-if [ -z "$GH_TOKEN" ]; then
+if [ -z "${GH_TOKEN:-}" ]; then
   echo "Error: GH_TOKEN environment variable is not set"
   exit 1
 fi
 
-python3 << PYTHON_SCRIPT
+python3 << 'PYTHON_SCRIPT'
 import json
 import urllib.request
 import urllib.error
@@ -22,41 +22,41 @@ GH_TOKEN = os.environ.get('GH_TOKEN')
 
 def gh_api(path, paginate=False):
     """Make a request to GitHub API"""
-    url = f"https://api.github.com/{path}"
-    req = urllib.request.Request(url)
-    req.add_header("Authorization", f"token {GH_TOKEN}")
-    req.add_header("Accept", "application/vnd.github.v3+json")
-    
+    base_url = f"https://api.github.com/{path}"
+
+    def make_req(url):
+        req = urllib.request.Request(url)
+        req.add_header("Authorization", f"token {GH_TOKEN}")
+        req.add_header("Accept", "application/vnd.github.v3+json")
+        return req
+
     if paginate:
-        # Handle pagination
         results = []
+        url = base_url
         while url:
             try:
+                req = make_req(url)  # FIX: tạo req mới mỗi iteration
                 response = urllib.request.urlopen(req)
                 data = json.loads(response.read().decode())
                 if isinstance(data, list):
                     results.extend(data)
                 else:
                     results.append(data)
-                
+
                 # Check for next page
                 links = response.headers.get("Link", "")
-                next_url = None
+                url = None  # FIX: reset url, thoát loop nếu không có next
                 for link in links.split(","):
                     if 'rel="next"' in link:
-                        next_url = link[link.find("<")+1:link.find(">")]
+                        url = link[link.find("<")+1:link.find(">")]
                         break
-                if not next_url:
-                    break
-                req = urllib.request.Request(next_url)
-                req.add_header("Authorization", f"token {GH_TOKEN}")
-                req.add_header("Accept", "application/vnd.github.v3+json")
             except urllib.error.HTTPError as e:
                 print(f"HTTP Error: {e.code} {e.reason}")
                 raise
         return results
     else:
         try:
+            req = make_req(base_url)
             response = urllib.request.urlopen(req)
             data = json.loads(response.read().decode())
             return data if isinstance(data, list) else [data]
@@ -73,25 +73,26 @@ def get_repo_file(repo, filepath):
         req.add_header("Accept", "application/vnd.github.v3+json")
         response = urllib.request.urlopen(req)
         data = json.loads(response.read().decode())
-        return base64.b64decode(data["content"]).decode("utf-8")
-    except:
+        # FIX: xử lý content có thể bị wrap nhiều dòng
+        raw = data["content"].replace("\n", "")
+        return base64.b64decode(raw).decode("utf-8")
+    except Exception:
         return None
 
 def extract_deps_from_repo(repo):
     """Extract dependencies from package.json or composer.json"""
     deps = set()
-    
+
     # Check package.json
     content = get_repo_file(repo, "package.json")
     if content:
         try:
             pkg = json.loads(content)
             all_deps = list(pkg.get("dependencies", {}).keys()) + list(pkg.get("devDependencies", {}).keys())
-            for d in all_deps:
-                deps.add(d)
-        except:
+            deps.update(all_deps)
+        except Exception:
             pass
-    
+
     # Check composer.json
     content = get_repo_file(repo, "composer.json")
     if content:
@@ -99,21 +100,19 @@ def extract_deps_from_repo(repo):
             pkg = json.loads(content)
             for d in list(pkg.get("require", {}).keys()) + list(pkg.get("require-dev", {}).keys()):
                 deps.add(d)
-        except:
+        except Exception:
             pass
-    
+
     # Check Dockerfile
-    content = get_repo_file(repo, "Dockerfile")
-    if content:
+    if get_repo_file(repo, "Dockerfile"):
         deps.add("__dockerfile__")
-    
+
     # Check docker-compose.yml / docker-compose.yaml
     for compose_file in ["docker-compose.yml", "docker-compose.yaml"]:
-        content = get_repo_file(repo, compose_file)
-        if content:
+        if get_repo_file(repo, compose_file):
             deps.add("__docker_compose__")
             break
-    
+
     return deps
 
 # Tech mapping: exact package name -> (display_name, color, logo, logo_color)
@@ -153,13 +152,14 @@ years = (datetime.now(timezone.utc) - created).days // 365
 all_repos = gh_api("users/dt418/repos", paginate=True)
 repos = [r for r in all_repos if not r["fork"] and r["name"] != "dt418"]
 
-# Scan dependencies from all repos (skip config-only repos)
-repos_to_scan = [r["name"] for r in repos if r["language"] in ("TypeScript", "JavaScript", "PHP", "Python", "Go", "Rust", "Ruby")]
+# Scan dependencies from all repos
+SCAN_LANGUAGES = {"TypeScript", "JavaScript", "PHP", "Python", "Go", "Rust", "Ruby"}
+repos_to_scan = [r["name"] for r in repos if r["language"] in SCAN_LANGUAGES]
 all_deps = set()
 repo_languages = set()
+
 for repo_name in repos_to_scan:
     all_deps.update(extract_deps_from_repo(repo_name))
-    # Find the repo object for language
     for r in repos:
         if r["name"] == repo_name and r["language"]:
             repo_languages.add(r["language"])
@@ -168,21 +168,25 @@ for repo_name in repos_to_scan:
 # Add languages as detected tech
 if "TypeScript" in repo_languages:
     all_deps.add("typescript")
-if "JavaScript" in repo_languages:
-    all_deps.add("vite")  # JS repos often use vite, but we already have it from deps
 
 # Build tech stack badges from detected deps
 detected_tech = []
 for dep, (name, color, logo, logoColor) in TECH_BADGES.items():
     if dep in all_deps:
+        # FIX: encode tên badge đúng cách (dấu cách -> _)
+        badge_name = name.replace(" ", "_").replace("-", "--")
         if logo:
-            detected_tech.append(f'<img src="https://img.shields.io/badge/{name.replace(" ", "_")}-{color}?style=flat&logo={logo}&logoColor={logoColor}" alt="{name}" />')
+            detected_tech.append(
+                f'<img src="https://img.shields.io/badge/{badge_name}-{color}?style=flat&logo={logo}&logoColor={logoColor}" alt="{name}" />'
+            )
         else:
-            detected_tech.append(f'<img src="https://img.shields.io/badge/{name.replace(" ", "_")}-{color}?style=flat&logoColor={logoColor}" alt="{name}" />')
+            detected_tech.append(
+                f'<img src="https://img.shields.io/badge/{badge_name}-{color}?style=flat&logoColor={logoColor}" alt="{name}" />'
+            )
 
 tech_stack_html = "\n  ".join(detected_tech) if detected_tech else "*No tech detected*"
 
-# About Me - detect from actual usage
+# About Me
 has_laravel = "laravel/framework" in all_deps
 has_filament = "filament/filament" in all_deps
 has_nextjs = "next" in all_deps
@@ -198,13 +202,28 @@ about_lines.append("- 🟢 Available for hire")
 about_html = "\n".join(about_lines)
 
 def get_commit_count(repo):
-    """Get total commit count for a repo"""
+    """Get commit count using contributor stats — tránh fetch toàn bộ commit history"""
     try:
-        # Use paginated API to get all commits
-        commits = gh_api(f"repos/dt418/{repo}/commits", paginate=True)
-        return len(commits)
-    except:
-        return -1  # Repo deleted or inaccessible
+        # FIX: dùng contributors stats thay vì paginate toàn bộ commits
+        # API trả về số commit mỗi contributor, tổng lại nhanh hơn nhiều
+        stats = gh_api(f"repos/dt418/{repo}/contributors", paginate=True)
+        total = sum(c.get("contributions", 0) for c in stats)
+        return total if total > 0 else 0
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return -1  # Repo deleted hoặc không accessible
+        # 202: GitHub đang tính toán stats, thử lại sau
+        if e.code == 202:
+            import time
+            time.sleep(3)
+            try:
+                stats = gh_api(f"repos/dt418/{repo}/contributors", paginate=True)
+                return sum(c.get("contributions", 0) for c in stats)
+            except Exception:
+                return 0
+        return 0
+    except Exception:
+        return 0
 
 # Active projects: updated within last 3 months
 three_months_ago = datetime.now(timezone.utc) - timedelta(days=90)
@@ -227,16 +246,15 @@ for r in released[:6]:
     desc = (r.get("description") or "—").replace("|", r"\|")
     released_table += f"\n| [{r['name']}]({r['html_url']}) | {lang} | {r['stargazers_count']} | {desc} |"
 
-# Top projects: most stars, skip deleted repos
+# Top projects — fetch commit counts
 print("Fetching commit counts for featured projects...")
 repo_commits = {}
 for r in repos:
     count = get_commit_count(r["name"])
     repo_commits[r["name"]] = count
-    status = "DELETED" if count == -1 else f"{count} commits"
+    status = "DELETED/inaccessible" if count == -1 else f"{count} commits"
     print(f"  {r['name']}: {status}")
 
-# Filter out deleted repos, sort by stars descending
 valid_repos = [r for r in repos if repo_commits.get(r["name"], -1) >= 0]
 top = sorted(valid_repos, key=lambda r: r["stargazers_count"], reverse=True)[:6]
 top_table = "| Project | Language | ⭐ | Commits |\n|---------|----------|----|---------|"
@@ -253,7 +271,7 @@ for r in repos:
 lang_stats = ", ".join(f"{k} ({v})" for k, v in sorted(lang_counts.items(), key=lambda x: -x[1])[:5])
 
 # Update README
-with open("README.md", "r") as f:
+with open("README.md", "r", encoding="utf-8") as f:  # FIX: thêm encoding
     content = f.read()
 
 content = re.sub(r'id="repos-count">\d+</span>', f'id="repos-count">{public_repos}</span>', content)
@@ -291,10 +309,11 @@ content = re.sub(
     content, flags=re.DOTALL
 )
 
-now = datetime.now().strftime("%B %Y")
+# FIX: dùng timezone-aware datetime để nhất quán
+now = datetime.now(timezone.utc).strftime("%B %Y")
 content = re.sub(r"Last updated:.*?•", f"Last updated: {now} •", content)
 
-with open("README.md", "w") as f:
+with open("README.md", "w", encoding="utf-8") as f:  # FIX: thêm encoding
     f.write(content)
 
 print("README updated successfully")

@@ -1,5 +1,4 @@
 name: Update README Stats
-
 on:
   schedule:
     - cron: '0 17 * * *'

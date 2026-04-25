@@ -27,8 +27,8 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-04-23 |
 | [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 2026-04-23 |
-| [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-04-19 |
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 2026-04-09 |
 | [localskills-manager](https://github.com/dt418/localskills-manager) | — | 2026-04-02 |
 | [9router-docker](https://github.com/dt418/9router-docker) | JavaScript | 2026-03-26 |
@@ -83,7 +83,7 @@
 |---------|----------|----|---------|
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | 33 |
 | [9router-agent-skill](https://github.com/dt418/9router-agent-skill) | — | 0 | 1 |
-| [9router-docker](https://github.com/dt418/9router-docker) | JavaScript | 0 | 403 |
+| [9router-docker](https://github.com/dt418/9router-docker) | JavaScript | 0 | 198 |
 | [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 | 2 |
 | [docker-smoke-test-agent-skill](https://github.com/dt418/docker-smoke-test-agent-skill) | — | 0 | 1 |
 | [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 0 | 14 |

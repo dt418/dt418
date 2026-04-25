@@ -224,7 +224,7 @@ released = sorted([r for r in repos if r["stargazers_count"] > 0], key=lambda r:
 released_table = "| Project | Language | ⭐ | Description |\n|---------|----------|----|-------------|"
 for r in released[:6]:
     lang = r["language"] or "—"
-    desc = (r.get("description") or "—").replace("|", "\\|")
+    desc = (r.get("description") or "—").replace("|", r"\|")
     released_table += f"\n| [{r['name']}]({r['html_url']}) | {lang} | {r['stargazers_count']} | {desc} |"
 
 # Top projects: most stars, skip deleted repos

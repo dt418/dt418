@@ -7,7 +7,7 @@
 
 <p align="center">
   <strong>Followers:</strong> <span id="followers-count">0</span> •
-  <strong>Repositories:</strong> <span id="repos-count">25</span> •
+  <strong>Repositories:</strong> <span id="repos-count">26</span> •
   <strong>GitHub Member:</strong> <span id="years-count">6</span> years
 </p>
 
@@ -27,7 +27,7 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-04-23 |
+| [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-04-27 |
 | [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 2026-04-23 |
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 2026-04-09 |
 | [localskills-manager](https://github.com/dt418/localskills-manager) | — | 2026-04-02 |
@@ -100,4 +100,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: April 2026 • <span id="repos-count">25</span> public repositories • <span id="lang-stats">Other (5), TypeScript (5), JavaScript (2), PHP (1), PowerShell (1)</span></em></p>
+<p align="center"><em>Last updated: April 2026 • <span id="repos-count">26</span> public repositories • <span id="lang-stats">Other (5), TypeScript (5), JavaScript (2), PHP (1), PowerShell (1)</span></em></p>

@@ -27,9 +27,9 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-04-30 |
+| [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-01 |
+| [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-05-01 |
 | [opencode-ai-os-v4-semantic](https://github.com/dt418/opencode-ai-os-v4-semantic) | TypeScript | 2026-04-30 |
-| [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-04-27 |
 | [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 2026-04-23 |
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 2026-04-09 |
 <!-- ACTIVE-PROJECTS:END -->
@@ -100,4 +100,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: April 2026 • <span id="repos-count">28</span> public repositories • <span id="lang-stats">TypeScript (7), Other (5), JavaScript (2), PHP (1), PowerShell (1)</span></em></p>
+<p align="center"><em>Last updated: May 2026 • <span id="repos-count">28</span> public repositories • <span id="lang-stats">TypeScript (7), Other (5), JavaScript (2), PHP (1), PowerShell (1)</span></em></p>

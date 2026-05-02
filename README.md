@@ -27,8 +27,8 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-05-02 |
 | [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-01 |
-| [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-05-01 |
 | [opencode-ai-os-v4-semantic](https://github.com/dt418/opencode-ai-os-v4-semantic) | TypeScript | 2026-04-30 |
 | [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 2026-04-23 |
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 2026-04-09 |

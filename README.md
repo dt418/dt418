@@ -27,7 +27,7 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [VolumeControl](https://github.com/dt418/VolumeControl) | AutoHotkey | 2026-05-03 |
+| [VolumeControl](https://github.com/dt418/VolumeControl) | AutoHotkey | 2026-05-04 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-05-03 |
 | [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-01 |
 | [opencode-ai-os-v4-semantic](https://github.com/dt418/opencode-ai-os-v4-semantic) | TypeScript | 2026-04-30 |

@@ -27,8 +27,8 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [VolumeControl](https://github.com/dt418/VolumeControl) | AutoHotkey | 2026-05-04 |
-| [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-05-03 |
+| [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-05-06 |
+| [VolumeControl](https://github.com/dt418/VolumeControl) | AutoHotkey | 2026-05-06 |
 | [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-01 |
 | [opencode-ai-os-v4-semantic](https://github.com/dt418/opencode-ai-os-v4-semantic) | TypeScript | 2026-04-30 |
 | [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 2026-04-23 |
@@ -83,7 +83,7 @@
 |---------|----------|----|---------|
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | 33 |
 | [9router-agent-skill](https://github.com/dt418/9router-agent-skill) | — | 0 | 1 |
-| [9router-docker](https://github.com/dt418/9router-docker) | JavaScript | 0 | 198 |
+| [9router-docker](https://github.com/dt418/9router-docker) | JavaScript | 0 | 207 |
 | [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 | 2 |
 | [docker-smoke-test-agent-skill](https://github.com/dt418/docker-smoke-test-agent-skill) | — | 0 | 1 |
 | [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 0 | 14 |

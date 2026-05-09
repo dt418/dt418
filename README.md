@@ -7,7 +7,7 @@
 
 <p align="center">
   <strong>Followers:</strong> <span id="followers-count">0</span> •
-  <strong>Repositories:</strong> <span id="repos-count">29</span> •
+  <strong>Repositories:</strong> <span id="repos-count">30</span> •
   <strong>GitHub Member:</strong> <span id="years-count">6</span> years
 </p>
 
@@ -27,11 +27,11 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-05-09 |
+| [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-05-09 |
 | [VolumeControl](https://github.com/dt418/VolumeControl) | AutoHotkey | 2026-05-07 |
-| [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-05-06 |
 | [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-01 |
 | [opencode-ai-os-v4-semantic](https://github.com/dt418/opencode-ai-os-v4-semantic) | TypeScript | 2026-04-30 |
-| [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 2026-04-23 |
 <!-- ACTIVE-PROJECTS:END -->
 
 ### Connect
@@ -84,9 +84,9 @@
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | 33 |
 | [9router-agent-skill](https://github.com/dt418/9router-agent-skill) | — | 0 | 1 |
 | [9router-docker](https://github.com/dt418/9router-docker) | JavaScript | 0 | 207 |
+| [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 0 | 4 |
 | [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 | 2 |
 | [docker-smoke-test-agent-skill](https://github.com/dt418/docker-smoke-test-agent-skill) | — | 0 | 1 |
-| [github-repo-manager](https://github.com/dt418/github-repo-manager) | TypeScript | 0 | 14 |
 <!-- PROJECTS:END -->
 
 ### GitHub Stats
@@ -100,4 +100,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: May 2026 • <span id="repos-count">29</span> public repositories • <span id="lang-stats">TypeScript (7), Other (5), JavaScript (2), PHP (1), PowerShell (1)</span></em></p>
+<p align="center"><em>Last updated: May 2026 • <span id="repos-count">30</span> public repositories • <span id="lang-stats">TypeScript (7), Other (5), JavaScript (2), Python (1), PHP (1)</span></em></p>

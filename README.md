@@ -27,8 +27,8 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-05-16 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-05-14 |
-| [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-05-09 |
 | [VolumeControl](https://github.com/dt418/VolumeControl) | AutoHotkey | 2026-05-07 |
 | [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-01 |
 | [opencode-ai-os-v4-semantic](https://github.com/dt418/opencode-ai-os-v4-semantic) | TypeScript | 2026-04-30 |
@@ -84,7 +84,7 @@
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | 33 |
 | [9router-agent-skill](https://github.com/dt418/9router-agent-skill) | — | 0 | 1 |
 | [9router-docker](https://github.com/dt418/9router-docker) | JavaScript | 0 | 207 |
-| [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 0 | 4 |
+| [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 0 | 5 |
 | [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 | 2 |
 | [docker-smoke-test-agent-skill](https://github.com/dt418/docker-smoke-test-agent-skill) | — | 0 | 1 |
 <!-- PROJECTS:END -->

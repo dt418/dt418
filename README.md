@@ -7,7 +7,7 @@
 
 <p align="center">
   <strong>Followers:</strong> <span id="followers-count">0</span> •
-  <strong>Repositories:</strong> <span id="repos-count">30</span> •
+  <strong>Repositories:</strong> <span id="repos-count">31</span> •
   <strong>GitHub Member:</strong> <span id="years-count">7</span> years
 </p>
 
@@ -27,11 +27,11 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [wedding-invitation](https://github.com/dt418/wedding-invitation) | TypeScript | 2026-05-17 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-05-16 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-05-14 |
 | [VolumeControl](https://github.com/dt418/VolumeControl) | AutoHotkey | 2026-05-07 |
 | [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-01 |
-| [opencode-ai-os-v4-semantic](https://github.com/dt418/opencode-ai-os-v4-semantic) | TypeScript | 2026-04-30 |
 <!-- ACTIVE-PROJECTS:END -->
 
 ### Connect
@@ -100,4 +100,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: May 2026 • <span id="repos-count">30</span> public repositories • <span id="lang-stats">TypeScript (7), Other (5), JavaScript (2), Python (1), PHP (1)</span></em></p>
+<p align="center"><em>Last updated: May 2026 • <span id="repos-count">31</span> public repositories • <span id="lang-stats">TypeScript (8), Other (5), JavaScript (2), Python (1), PHP (1)</span></em></p>

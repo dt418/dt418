@@ -27,7 +27,7 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [wedding-invitation](https://github.com/dt418/wedding-invitation) | TypeScript | 2026-05-17 |
+| [wedding-invitation](https://github.com/dt418/wedding-invitation) | TypeScript | 2026-05-19 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-05-16 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-05-14 |
 | [VolumeControl](https://github.com/dt418/VolumeControl) | AutoHotkey | 2026-05-07 |

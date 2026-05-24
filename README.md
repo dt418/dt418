@@ -27,11 +27,11 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [wedding-invitation](https://github.com/dt418/wedding-invitation) | TypeScript | 2026-05-22 |
+| [wedding-invitation](https://github.com/dt418/wedding-invitation) | TypeScript | 2026-05-24 |
+| [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-24 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-05-20 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-05-16 |
 | [VolumeControl](https://github.com/dt418/VolumeControl) | AutoHotkey | 2026-05-07 |
-| [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-01 |
 <!-- ACTIVE-PROJECTS:END -->
 
 ### Connect

@@ -83,7 +83,7 @@
 |---------|----------|----|---------|
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | 33 |
 | [9router-agent-skill](https://github.com/dt418/9router-agent-skill) | — | 0 | 1 |
-| [9router-docker](https://github.com/dt418/9router-docker) | JavaScript | 0 | 207 |
+| [9router-docker](https://github.com/dt418/9router-docker) | JavaScript | 0 | 206 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 0 | 5 |
 | [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 | 2 |
 | [docker-smoke-test-agent-skill](https://github.com/dt418/docker-smoke-test-agent-skill) | — | 0 | 1 |

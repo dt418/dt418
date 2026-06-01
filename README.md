@@ -7,7 +7,7 @@
 
 <p align="center">
   <strong>Followers:</strong> <span id="followers-count">0</span> •
-  <strong>Repositories:</strong> <span id="repos-count">31</span> •
+  <strong>Repositories:</strong> <span id="repos-count">32</span> •
   <strong>GitHub Member:</strong> <span id="years-count">7</span> years
 </p>
 
@@ -27,11 +27,11 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [wedding-prompt-studio](https://github.com/dt418/wedding-prompt-studio) | TypeScript | 2026-06-01 |
 | [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-25 |
 | [wedding-invitation](https://github.com/dt418/wedding-invitation) | TypeScript | 2026-05-24 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-05-20 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-05-16 |
-| [VolumeControl](https://github.com/dt418/VolumeControl) | AutoHotkey | 2026-05-07 |
 <!-- ACTIVE-PROJECTS:END -->
 
 ### Connect
@@ -100,4 +100,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: May 2026 • <span id="repos-count">31</span> public repositories • <span id="lang-stats">TypeScript (8), Other (5), JavaScript (2), Python (1), PHP (1)</span></em></p>
+<p align="center"><em>Last updated: June 2026 • <span id="repos-count">32</span> public repositories • <span id="lang-stats">TypeScript (9), Other (5), JavaScript (2), Python (1), PHP (1)</span></em></p>

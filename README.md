@@ -27,7 +27,7 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [wedding-prompt-studio](https://github.com/dt418/wedding-prompt-studio) | TypeScript | 2026-06-01 |
+| [wedding-prompt-studio](https://github.com/dt418/wedding-prompt-studio) | TypeScript | 2026-06-02 |
 | [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-25 |
 | [wedding-invitation](https://github.com/dt418/wedding-invitation) | TypeScript | 2026-05-24 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-05-20 |

@@ -7,7 +7,7 @@
 
 <p align="center">
   <strong>Followers:</strong> <span id="followers-count">0</span> •
-  <strong>Repositories:</strong> <span id="repos-count">33</span> •
+  <strong>Repositories:</strong> <span id="repos-count">32</span> •
   <strong>GitHub Member:</strong> <span id="years-count">7</span> years
 </p>
 
@@ -27,7 +27,7 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 2026-06-03 |
+| [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 2026-06-04 |
 | [wedding-prompt-studio](https://github.com/dt418/wedding-prompt-studio) | TypeScript | 2026-06-02 |
 | [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-25 |
 | [wedding-invitation](https://github.com/dt418/wedding-invitation) | TypeScript | 2026-05-24 |
@@ -83,10 +83,10 @@
 |---------|----------|----|---------|
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | 33 |
 | [9router-agent-skill](https://github.com/dt418/9router-agent-skill) | — | 0 | 1 |
-| [9router-docker](https://github.com/dt418/9router-docker) | JavaScript | 0 | 206 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 0 | 5 |
 | [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 | 2 |
-| [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 0 | 17 |
+| [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 0 | 52 |
+| [docker-smoke-test-agent-skill](https://github.com/dt418/docker-smoke-test-agent-skill) | — | 0 | 1 |
 <!-- PROJECTS:END -->
 
 ### GitHub Stats
@@ -100,4 +100,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: June 2026 • <span id="repos-count">33</span> public repositories • <span id="lang-stats">TypeScript (10), Other (5), JavaScript (2), Python (1), PHP (1)</span></em></p>
+<p align="center"><em>Last updated: June 2026 • <span id="repos-count">32</span> public repositories • <span id="lang-stats">TypeScript (10), Other (5), Python (1), PHP (1), JavaScript (1)</span></em></p>

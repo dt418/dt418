@@ -27,7 +27,7 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 2026-06-04 |
+| [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 2026-06-05 |
 | [wedding-prompt-studio](https://github.com/dt418/wedding-prompt-studio) | TypeScript | 2026-06-02 |
 | [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-25 |
 | [wedding-invitation](https://github.com/dt418/wedding-invitation) | TypeScript | 2026-05-24 |
@@ -85,7 +85,7 @@
 | [9router-agent-skill](https://github.com/dt418/9router-agent-skill) | — | 0 | 1 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 0 | 5 |
 | [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 | 2 |
-| [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 0 | 52 |
+| [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 0 | 95 |
 | [docker-smoke-test-agent-skill](https://github.com/dt418/docker-smoke-test-agent-skill) | — | 0 | 1 |
 <!-- PROJECTS:END -->
 

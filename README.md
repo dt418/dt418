@@ -27,11 +27,11 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-06-10 |
 | [better-shot-x](https://github.com/dt418/better-shot-x) | Rust | 2026-06-07 |
 | [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 2026-06-05 |
 | [wedding-prompt-studio](https://github.com/dt418/wedding-prompt-studio) | TypeScript | 2026-06-02 |
 | [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-25 |
-| [wedding-invitation](https://github.com/dt418/wedding-invitation) | TypeScript | 2026-05-24 |
 <!-- ACTIVE-PROJECTS:END -->
 
 ### Connect
@@ -83,7 +83,7 @@
 |---------|----------|----|---------|
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | 33 |
 | [9router-agent-skill](https://github.com/dt418/9router-agent-skill) | — | 0 | 1 |
-| [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 0 | 5 |
+| [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 0 | 8 |
 | [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 | 2 |
 | [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 0 | 95 |
 | [better-shot-x](https://github.com/dt418/better-shot-x) | Rust | 0 | 16 |

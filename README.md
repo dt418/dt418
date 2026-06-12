@@ -27,8 +27,8 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [better-shot-x](https://github.com/dt418/better-shot-x) | TypeScript | 2026-06-12 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-06-10 |
-| [better-shot-x](https://github.com/dt418/better-shot-x) | Rust | 2026-06-07 |
 | [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 2026-06-05 |
 | [wedding-prompt-studio](https://github.com/dt418/wedding-prompt-studio) | TypeScript | 2026-06-02 |
 | [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-25 |
@@ -86,7 +86,7 @@
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 0 | 8 |
 | [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 | 2 |
 | [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 0 | 95 |
-| [better-shot-x](https://github.com/dt418/better-shot-x) | Rust | 0 | 16 |
+| [better-shot-x](https://github.com/dt418/better-shot-x) | TypeScript | 0 | 27 |
 <!-- PROJECTS:END -->
 
 ### GitHub Stats
@@ -100,4 +100,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: June 2026 • <span id="repos-count">33</span> public repositories • <span id="lang-stats">TypeScript (10), Other (5), Python (1), Rust (1), PHP (1)</span></em></p>
+<p align="center"><em>Last updated: June 2026 • <span id="repos-count">33</span> public repositories • <span id="lang-stats">TypeScript (11), Other (5), Python (1), PHP (1), JavaScript (1)</span></em></p>

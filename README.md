@@ -7,7 +7,7 @@
 
 <p align="center">
   <strong>Followers:</strong> <span id="followers-count">0</span> •
-  <strong>Repositories:</strong> <span id="repos-count">33</span> •
+  <strong>Repositories:</strong> <span id="repos-count">34</span> •
   <strong>GitHub Member:</strong> <span id="years-count">7</span> years
 </p>
 
@@ -27,11 +27,11 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [keyra](https://github.com/dt418/keyra) | TypeScript | 2026-06-13 |
 | [better-shot-x](https://github.com/dt418/better-shot-x) | TypeScript | 2026-06-12 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-06-10 |
 | [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 2026-06-05 |
 | [wedding-prompt-studio](https://github.com/dt418/wedding-prompt-studio) | TypeScript | 2026-06-02 |
-| [zshrc-dotfile](https://github.com/dt418/zshrc-dotfile) | Shell | 2026-05-25 |
 <!-- ACTIVE-PROJECTS:END -->
 
 ### Connect
@@ -100,4 +100,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: June 2026 • <span id="repos-count">33</span> public repositories • <span id="lang-stats">TypeScript (11), Other (5), Python (1), PHP (1), JavaScript (1)</span></em></p>
+<p align="center"><em>Last updated: June 2026 • <span id="repos-count">34</span> public repositories • <span id="lang-stats">TypeScript (12), Other (5), Python (1), PHP (1), JavaScript (1)</span></em></p>

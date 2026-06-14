@@ -27,8 +27,8 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [keyra](https://github.com/dt418/keyra) | TypeScript | 2026-06-13 |
-| [better-shot-x](https://github.com/dt418/better-shot-x) | TypeScript | 2026-06-12 |
+| [keyra](https://github.com/dt418/keyra) | TypeScript | 2026-06-14 |
+| [better-shot-x](https://github.com/dt418/better-shot-x) | TypeScript | 2026-06-14 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-06-10 |
 | [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 2026-06-05 |
 | [wedding-prompt-studio](https://github.com/dt418/wedding-prompt-studio) | TypeScript | 2026-06-02 |
@@ -86,7 +86,7 @@
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 0 | 8 |
 | [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 | 2 |
 | [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 0 | 95 |
-| [better-shot-x](https://github.com/dt418/better-shot-x) | TypeScript | 0 | 27 |
+| [better-shot-x](https://github.com/dt418/better-shot-x) | TypeScript | 0 | 30 |
 <!-- PROJECTS:END -->
 
 ### GitHub Stats

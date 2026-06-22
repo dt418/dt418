@@ -27,7 +27,7 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [flow-desk](https://github.com/dt418/flow-desk) | TypeScript | 2026-06-21 |
+| [flow-desk](https://github.com/dt418/flow-desk) | TypeScript | 2026-06-22 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-06-21 |
 | [keyra](https://github.com/dt418/keyra) | TypeScript | 2026-06-21 |
 | [better-shot-x](https://github.com/dt418/better-shot-x) | TypeScript | 2026-06-14 |

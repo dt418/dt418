@@ -27,11 +27,11 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [flow-desk](https://github.com/dt418/flow-desk) | TypeScript | 2026-06-22 |
+| [flow-desk](https://github.com/dt418/flow-desk) | TypeScript | 2026-06-23 |
+| [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-06-23 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-06-21 |
 | [keyra](https://github.com/dt418/keyra) | TypeScript | 2026-06-21 |
 | [better-shot-x](https://github.com/dt418/better-shot-x) | TypeScript | 2026-06-14 |
-| [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-06-10 |
 <!-- ACTIVE-PROJECTS:END -->
 
 ### Connect

@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <strong>Followers:</strong> <span id="followers-count">0</span> •
+  <strong>Followers:</strong> <span id="followers-count">1</span> •
   <strong>Repositories:</strong> <span id="repos-count">36</span> •
   <strong>GitHub Member:</strong> <span id="years-count">7</span> years
 </p>
@@ -27,7 +27,7 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [flow-desk](https://github.com/dt418/flow-desk) | TypeScript | 2026-07-03 |
+| [flow-desk](https://github.com/dt418/flow-desk) | TypeScript | 2026-07-04 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-07-03 |
 | [clinepass-toolkit](https://github.com/dt418/clinepass-toolkit) | TypeScript | 2026-07-02 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-06-21 |

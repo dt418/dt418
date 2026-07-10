@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <strong>Followers:</strong> <span id="followers-count">1</span> •
+  <strong>Followers:</strong> <span id="followers-count">2</span> •
   <strong>Repositories:</strong> <span id="repos-count">36</span> •
   <strong>GitHub Member:</strong> <span id="years-count">7</span> years
 </p>

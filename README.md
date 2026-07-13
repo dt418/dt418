@@ -27,9 +27,9 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [clinepass-toolkit](https://github.com/dt418/clinepass-toolkit) | TypeScript | 2026-07-13 |
 | [flow-desk](https://github.com/dt418/flow-desk) | TypeScript | 2026-07-12 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-07-03 |
-| [clinepass-toolkit](https://github.com/dt418/clinepass-toolkit) | TypeScript | 2026-07-02 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-06-21 |
 | [keyra](https://github.com/dt418/keyra) | TypeScript | 2026-06-21 |
 <!-- ACTIVE-PROJECTS:END -->
@@ -73,7 +73,6 @@
 <!-- RELEASED-PROJECTS:START -->
 | Project | Language | ⭐ | Description |
 |---------|----------|----|-------------|
-| [clinepass-toolkit](https://github.com/dt418/clinepass-toolkit) | TypeScript | 1 | clinepass-toolkit |
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | A modern and elegant website for a yoga studio built with React, TypeScript, and Tailwind CSS. |
 <!-- RELEASED-PROJECTS:END -->
 
@@ -82,12 +81,12 @@
 <!-- PROJECTS:START -->
 | Project | Language | ⭐ | Commits |
 |---------|----------|----|---------|
-| [clinepass-toolkit](https://github.com/dt418/clinepass-toolkit) | TypeScript | 1 | 1 |
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | 33 |
 | [9router-agent-skill](https://github.com/dt418/9router-agent-skill) | — | 0 | 1 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 0 | 11 |
 | [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 | 2 |
 | [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 0 | 95 |
+| [better-shot-x](https://github.com/dt418/better-shot-x) | TypeScript | 0 | 30 |
 <!-- PROJECTS:END -->
 
 ### GitHub Stats

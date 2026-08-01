@@ -100,4 +100,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: July 2026 • <span id="repos-count">36</span> public repositories • <span id="lang-stats">TypeScript (14), Other (5), Python (1), PHP (1), JavaScript (1)</span></em></p>
+<p align="center"><em>Last updated: August 2026 • <span id="repos-count">36</span> public repositories • <span id="lang-stats">TypeScript (14), Other (5), Python (1), PHP (1), JavaScript (1)</span></em></p>

@@ -7,7 +7,7 @@
 
 <p align="center">
   <strong>Followers:</strong> <span id="followers-count">2</span> •
-  <strong>Repositories:</strong> <span id="repos-count">37</span> •
+  <strong>Repositories:</strong> <span id="repos-count">38</span> •
   <strong>GitHub Member:</strong> <span id="years-count">7</span> years
 </p>
 
@@ -27,11 +27,11 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [volume-control](https://github.com/dt418/volume-control) | Rust | 2026-08-04 |
+| [volume-control](https://github.com/dt418/volume-control) | Rust | 2026-08-05 |
+| [cline2api](https://github.com/dt418/cline2api) | TypeScript | 2026-08-05 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-07-30 |
 | [flow-desk](https://github.com/dt418/flow-desk) | TypeScript | 2026-07-29 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 2026-07-18 |
-| [clinepass-toolkit](https://github.com/dt418/clinepass-toolkit) | TypeScript | 2026-07-13 |
 <!-- ACTIVE-PROJECTS:END -->
 
 ### Connect
@@ -100,4 +100,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: August 2026 • <span id="repos-count">37</span> public repositories • <span id="lang-stats">TypeScript (14), Other (5), Python (1), PHP (1), JavaScript (1)</span></em></p>
+<p align="center"><em>Last updated: August 2026 • <span id="repos-count">38</span> public repositories • <span id="lang-stats">TypeScript (15), Other (5), Python (1), PHP (1), JavaScript (1)</span></em></p>

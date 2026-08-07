@@ -27,7 +27,7 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [volume-control](https://github.com/dt418/volume-control) | Rust | 2026-08-05 |
+| [volume-control](https://github.com/dt418/volume-control) | Rust | 2026-08-06 |
 | [cline2api](https://github.com/dt418/cline2api) | TypeScript | 2026-08-05 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-07-30 |
 | [flow-desk](https://github.com/dt418/flow-desk) | TypeScript | 2026-07-29 |

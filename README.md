@@ -27,7 +27,7 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-08-23 |
+| [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-08-24 |
 | [cline2api](https://github.com/dt418/cline2api) | TypeScript | 2026-08-23 |
 | [volume-control](https://github.com/dt418/volume-control) | Rust | 2026-08-19 |
 | [wsl-tools](https://github.com/dt418/wsl-tools) | PowerShell | 2026-08-08 |

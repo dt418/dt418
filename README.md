@@ -7,7 +7,7 @@
 
 <p align="center">
   <strong>Followers:</strong> <span id="followers-count">3</span> •
-  <strong>Repositories:</strong> <span id="repos-count">39</span> •
+  <strong>Repositories:</strong> <span id="repos-count">40</span> •
   <strong>GitHub Member:</strong> <span id="years-count">7</span> years
 </p>
 
@@ -27,11 +27,11 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [pi-setup-audit](https://github.com/dt418/pi-setup-audit) | PowerShell | 2026-08-28 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-08-25 |
 | [cline2api](https://github.com/dt418/cline2api) | TypeScript | 2026-08-23 |
 | [volume-control](https://github.com/dt418/volume-control) | Rust | 2026-08-19 |
 | [wsl-tools](https://github.com/dt418/wsl-tools) | PowerShell | 2026-08-08 |
-| [flow-desk](https://github.com/dt418/flow-desk) | TypeScript | 2026-07-29 |
 <!-- ACTIVE-PROJECTS:END -->
 
 ### Connect
@@ -101,4 +101,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: August 2026 • <span id="repos-count">39</span> public repositories • <span id="lang-stats">TypeScript (15), Other (5), PowerShell (2), Python (1), PHP (1)</span></em></p>
+<p align="center"><em>Last updated: August 2026 • <span id="repos-count">40</span> public repositories • <span id="lang-stats">TypeScript (15), Other (5), PowerShell (3), Python (1), PHP (1)</span></em></p>

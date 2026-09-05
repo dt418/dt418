@@ -27,9 +27,9 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [cline2api](https://github.com/dt418/cline2api) | TypeScript | 2026-09-05 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-08-31 |
 | [pi-setup-audit](https://github.com/dt418/pi-setup-audit) | PowerShell | 2026-08-28 |
-| [cline2api](https://github.com/dt418/cline2api) | TypeScript | 2026-08-23 |
 | [volume-control](https://github.com/dt418/volume-control) | Rust | 2026-08-19 |
 | [wsl-tools](https://github.com/dt418/wsl-tools) | PowerShell | 2026-08-08 |
 <!-- ACTIVE-PROJECTS:END -->
@@ -73,7 +73,7 @@
 <!-- RELEASED-PROJECTS:START -->
 | Project | Language | ⭐ | Description |
 |---------|----------|----|-------------|
-| [cline2api](https://github.com/dt418/cline2api) | TypeScript | 1 | — |
+| [cline2api](https://github.com/dt418/cline2api) | TypeScript | 2 | — |
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | A modern and elegant website for a yoga studio built with React, TypeScript, and Tailwind CSS. |
 <!-- RELEASED-PROJECTS:END -->
 
@@ -82,7 +82,7 @@
 <!-- PROJECTS:START -->
 | Project | Language | ⭐ | Commits |
 |---------|----------|----|---------|
-| [cline2api](https://github.com/dt418/cline2api) | TypeScript | 1 | 5 |
+| [cline2api](https://github.com/dt418/cline2api) | TypeScript | 2 | 5 |
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | 33 |
 | [9router-agent-skill](https://github.com/dt418/9router-agent-skill) | — | 0 | 1 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 0 | 11 |

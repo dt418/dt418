@@ -7,7 +7,7 @@
 
 <p align="center">
   <strong>Followers:</strong> <span id="followers-count">4</span> •
-  <strong>Repositories:</strong> <span id="repos-count">40</span> •
+  <strong>Repositories:</strong> <span id="repos-count">41</span> •
   <strong>GitHub Member:</strong> <span id="years-count">7</span> years
 </p>
 
@@ -101,4 +101,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: September 2026 • <span id="repos-count">40</span> public repositories • <span id="lang-stats">TypeScript (15), Other (5), PowerShell (3), Python (1), PHP (1)</span></em></p>
+<p align="center"><em>Last updated: September 2026 • <span id="repos-count">41</span> public repositories • <span id="lang-stats">TypeScript (15), Other (5), PowerShell (3), Python (1), PHP (1)</span></em></p>

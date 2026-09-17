@@ -27,7 +27,7 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-09-06 |
+| [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-09-17 |
 | [cline2api](https://github.com/dt418/cline2api) | TypeScript | 2026-09-05 |
 | [pi-setup-audit](https://github.com/dt418/pi-setup-audit) | PowerShell | 2026-08-28 |
 | [volume-control](https://github.com/dt418/volume-control) | Rust | 2026-08-19 |

@@ -87,7 +87,7 @@
 | [9router-agent-skill](https://github.com/dt418/9router-agent-skill) | — | 0 | 1 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 0 | 11 |
 | [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 | 2 |
-| [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 0 | 0 |
+| [astro-engineering-os](https://github.com/dt418/astro-engineering-os) | TypeScript | 0 | 95 |
 <!-- PROJECTS:END -->
 
 ### GitHub Stats

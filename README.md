@@ -7,7 +7,7 @@
 
 <p align="center">
   <strong>Followers:</strong> <span id="followers-count">3</span> •
-  <strong>Repositories:</strong> <span id="repos-count">43</span> •
+  <strong>Repositories:</strong> <span id="repos-count">44</span> •
   <strong>GitHub Member:</strong> <span id="years-count">7</span> years
 </p>
 
@@ -27,11 +27,11 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [omp-model-roles](https://github.com/dt418/omp-model-roles) | Python | 2026-09-30 |
 | [Stillwater-Aquarium](https://github.com/dt418/Stillwater-Aquarium) | JavaScript | 2026-09-20 |
 | [Stillwater-Aquarium-Lite](https://github.com/dt418/Stillwater-Aquarium-Lite) | HTML | 2026-09-18 |
 | [studio-cms](https://github.com/dt418/studio-cms) | TypeScript | 2026-09-17 |
 | [cline2api](https://github.com/dt418/cline2api) | TypeScript | 2026-09-05 |
-| [pi-setup-audit](https://github.com/dt418/pi-setup-audit) | PowerShell | 2026-08-28 |
 <!-- ACTIVE-PROJECTS:END -->
 
 ### Connect
@@ -101,4 +101,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: September 2026 • <span id="repos-count">43</span> public repositories • <span id="lang-stats">TypeScript (15), Other (5), PowerShell (3), JavaScript (2), Python (1)</span></em></p>
+<p align="center"><em>Last updated: September 2026 • <span id="repos-count">44</span> public repositories • <span id="lang-stats">TypeScript (15), Other (5), PowerShell (3), Python (2), JavaScript (2)</span></em></p>

@@ -27,8 +27,8 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [luma-ambient-youtube](https://github.com/dt418/luma-ambient-youtube) | JavaScript | 2026-10-05 |
 | [evkey-linux-community](https://github.com/dt418/evkey-linux-community) | C++ | 2026-10-04 |
-| [luma-ambient-youtube](https://github.com/dt418/luma-ambient-youtube) | JavaScript | 2026-10-03 |
 | [omp-model-roles](https://github.com/dt418/omp-model-roles) | Python | 2026-09-30 |
 | [Stillwater-Aquarium](https://github.com/dt418/Stillwater-Aquarium) | JavaScript | 2026-09-20 |
 | [Stillwater-Aquarium-Lite](https://github.com/dt418/Stillwater-Aquarium-Lite) | HTML | 2026-09-18 |

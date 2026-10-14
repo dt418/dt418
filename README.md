@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <strong>Followers:</strong> <span id="followers-count">3</span> •
+  <strong>Followers:</strong> <span id="followers-count">2</span> •
   <strong>Repositories:</strong> <span id="repos-count">46</span> •
   <strong>GitHub Member:</strong> <span id="years-count">7</span> years
 </p>
@@ -27,8 +27,8 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [evkey-linux-community](https://github.com/dt418/evkey-linux-community) | HTML | 2026-10-14 |
 | [luma-ambient-youtube](https://github.com/dt418/luma-ambient-youtube) | JavaScript | 2026-10-05 |
-| [evkey-linux-community](https://github.com/dt418/evkey-linux-community) | C++ | 2026-10-04 |
 | [omp-model-roles](https://github.com/dt418/omp-model-roles) | Python | 2026-09-30 |
 | [Stillwater-Aquarium](https://github.com/dt418/Stillwater-Aquarium) | JavaScript | 2026-09-20 |
 | [Stillwater-Aquarium-Lite](https://github.com/dt418/Stillwater-Aquarium-Lite) | HTML | 2026-09-18 |

@@ -27,11 +27,11 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
-| [volume-control](https://github.com/dt418/volume-control) | Rust | 2026-10-17 |
+| [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 2026-10-18 |
+| [cline2api](https://github.com/dt418/cline2api) | TypeScript | 2026-10-18 |
+| [volume-control](https://github.com/dt418/volume-control) | Rust | 2026-10-18 |
 | [evkey-linux-community](https://github.com/dt418/evkey-linux-community) | HTML | 2026-10-14 |
 | [luma-ambient-youtube](https://github.com/dt418/luma-ambient-youtube) | JavaScript | 2026-10-05 |
-| [omp-model-roles](https://github.com/dt418/omp-model-roles) | Python | 2026-09-30 |
-| [Stillwater-Aquarium](https://github.com/dt418/Stillwater-Aquarium) | JavaScript | 2026-09-20 |
 <!-- ACTIVE-PROJECTS:END -->
 
 ### Connect
@@ -83,7 +83,7 @@
 | Project | Language | ⭐ | Commits |
 |---------|----------|----|---------|
 | [cline2api](https://github.com/dt418/cline2api) | TypeScript | 2 | 5 |
-| [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | 33 |
+| [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 1 | 44 |
 | [9router-agent-skill](https://github.com/dt418/9router-agent-skill) | — | 0 | 1 |
 | [ai-shared-config](https://github.com/dt418/ai-shared-config) | Python | 0 | 11 |
 | [arcane-setup](https://github.com/dt418/arcane-setup) | — | 0 | 2 |

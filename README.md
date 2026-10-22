@@ -7,7 +7,7 @@
 
 <p align="center">
   <strong>Followers:</strong> <span id="followers-count">2</span> •
-  <strong>Repositories:</strong> <span id="repos-count">47</span> •
+  <strong>Repositories:</strong> <span id="repos-count">48</span> •
   <strong>GitHub Member:</strong> <span id="years-count">7</span> years
 </p>
 
@@ -27,9 +27,9 @@
 <!-- ACTIVE-PROJECTS:START -->
 | Project | Language | Last Updated |
 |---------|----------|-------------|
+| [volume-control](https://github.com/dt418/volume-control) | Rust | 2026-10-22 |
 | [yoga-lotus](https://github.com/dt418/yoga-lotus) | TypeScript | 2026-10-18 |
 | [cline2api](https://github.com/dt418/cline2api) | TypeScript | 2026-10-18 |
-| [volume-control](https://github.com/dt418/volume-control) | Rust | 2026-10-18 |
 | [evkey-linux-community](https://github.com/dt418/evkey-linux-community) | HTML | 2026-10-14 |
 | [luma-ambient-youtube](https://github.com/dt418/luma-ambient-youtube) | JavaScript | 2026-10-05 |
 <!-- ACTIVE-PROJECTS:END -->
@@ -101,4 +101,4 @@
 </p>
 
 ---
-<p align="center"><em>Last updated: October 2026 • <span id="repos-count">47</span> public repositories • <span id="lang-stats">TypeScript (15), Other (5), JavaScript (3), PowerShell (3), Python (2)</span></em></p>
+<p align="center"><em>Last updated: October 2026 • <span id="repos-count">48</span> public repositories • <span id="lang-stats">TypeScript (15), Other (5), JavaScript (3), PowerShell (3), Python (2)</span></em></p>
